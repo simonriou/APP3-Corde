@@ -75,7 +75,7 @@ with st.sidebar:
     
     st.subheader("Modèle")
     amortissement = st.checkbox("Amortissement", value=True, key="amortissement")
-    raideur = st.checkbox("Raideur de la corde", value=False, key="raideur")
+    raideur = st.checkbox("Raideur de la corde", value=True, key="raideur")
     
     # CL forcée à simply_supported
     st.selectbox("Conditions aux limites (CL)", options=["simply_supported"], disabled=True)
