@@ -90,6 +90,8 @@ def synthese_corde(L, T, E, I, rho, CL, raideur, amortissement, beta, eta, x_0, 
             omega_d = np.sqrt(omega_0**2 - sigma_n**2)
             coef_n = (B_n + sigma_n * A_n) / omega_d
 
+            print(A_n * phi_lst)
+
             q_n = np.exp(-sigma_n * t) * (A_n * np.cos(omega_d * t) + coef_n * np.sin(omega_d * t)) * (1.0 - np.exp(-t / tau_rel))
 
             signal_total += phi_lst * q_n

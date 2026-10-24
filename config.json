@@ -16,7 +16,7 @@
         "eta": 5e-4
     },
     "playing": {
-        "ponctual": false,
+        "ponctual": true,
         "x_0": 0.73,
         "l_0": 0.01,
         "h_0": 0.0025,
